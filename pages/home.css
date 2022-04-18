@@ -27,10 +27,32 @@ main{
     color: whitesmoke
 }
 section{
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 3px solid #C69CFA;
+    border-bottom-right-radius: 1em;
+}
+ul li{
+    list-style-type: #00E9DB ;
 }
 footer{
     text-align: center;
     padding-bottom: 2em;
+}
+
+.girlsontheblock{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.logo-image{
+    margin: auto;
+}
+footer a{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 4em;
+    }
 }

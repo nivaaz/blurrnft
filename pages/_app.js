@@ -1,29 +1,41 @@
 import "./home.css"
-import Head from 'next/head'
+import Head from 'next/head';
+import Image from 'next/image';
+import logo from "./assets/logo.png";
+import twitter from "./assets/twitter.svg";
+import linkedin from "./assets/linkedin.svg";
+import chain from "./assets/chain.svg";
 
 export default function Home() {
   return (
     <div className="container">
       <Header/>
       <main>
-        <section> 
-        <h1> Girls on the Block </h1>
+        <section className="girlsontheblock"> 
+        <h1> Girls on the<br/> Block </h1>
+        <span className="logo-image">
+        <Image src={logo} /></span>
         </section>
+
         <section> 
-        <h2> The problem </h2>
+        
+        <h2> <Image src={chain} height={32} width={32}/> The problem </h2>
         <p> There is a lack of immersive web3 education and onboarding, which is widening the gender diversity gap in web3. </p>     
-        </section> 
-        <section> 
-        <ul>
           Existing solutions: 
+        <ul>
           <li> Don't meet the crypto-curious women where they are right now, in web2 </li>
           <li> Use read only content, and add to the noise of google searches.</li>
           <li> Don't focus on fixing the real issue which is bad onboarding experiences to web 3.</li>
         </ul>
-        <h2> Our solution </h2>
+        
+        </section>
+        
+        <section> 
+        
+        <h2><Image src={chain} height={32} width={32}/> Our solution </h2>
         <p> Building an immersive educational experience to onboard women into web3 via gamefi. </p>
-        <ul>
           Our solutions: 
+        <ul>
 
           <li> <h3>Meeting crypto curious women where they are </h3>
             <ul>
@@ -56,20 +68,15 @@ export default function Home() {
         </section> 
         
         <section> 
-        <h2> Our team </h2>
-        <h3> Ash </h3>
-        <a href="https://twitter.com/womenof_web3"> twitter </a>
-        <a href="https://linkedin.com/in/ashibhat"> linkedin </a>
+        <h2><Image src={chain} height={32} width={32}/> Our team </h2>
+        <h3> Ash <a href="https://twitter.com/womenof_web3"> <Image height={24} width={24} src={twitter}/> </a>
+        <a href="https://linkedin.com/in/ashibhat"> <Image height={24} width={24} src={linkedin}/> </a></h3>
         
-        <h3> Nivaaz </h3>
-        <a href="https://twitter.com/nivaaz_nft"> twitter </a>
-        <a href="https://linkedin.com/in/nivaaz"> linkedin </a>
+        <h3> Nivaaz<a href="https://twitter.com/nivaaz_nft"> <Image height={24} width={24} src={twitter}/> </a>
+        <a href="https://linkedin.com/in/nivaaz"> <Image height={24} width={24} src={linkedin}/>  </a> </h3>
         
         </section> 
         
-        <section> 
-        </section> 
-
       </main>
       <Footer/>
     </div>
@@ -86,7 +93,7 @@ const Header = () =>(
 
 const Footer = () => ( <footer>
 <p>     Built with love by 
-    Ash 
-    & Nivaaz
+     <a href="https://twitter.com/womenof_web3"> Ash <Image fill="white" height={16} width={16} src={twitter}/> </a>
+     &  <a href="https://twitter.com/nivaaz_nft">   Nivaaz <Image height={16} width={16} src={twitter}/></a>
     </p>
 </footer>)
