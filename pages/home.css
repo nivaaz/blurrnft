@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Barbra';
+    src: url("fonts/barbra/Barbra-Regular.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+h1{
+    font-family: 'Barbra';
+    font-size: 8em;
+}
+h2{
+    font-family: 'Barbra';
+    font-size: 2em;
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    max-width: 800px;
+    margin: auto;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #210d41;
+    color: whitesmoke
+}
+section{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+footer{
+    text-align: center;
+    padding-bottom: 2em;
+}

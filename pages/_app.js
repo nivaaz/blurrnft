@@ -1,3 +1,4 @@
+import "./home.css"
 import Head from 'next/head'
 
 export default function Home() {
@@ -5,9 +6,14 @@ export default function Home() {
     <div className="container">
       <Header/>
       <main>
+        <section> 
         <h1> Girls on the Block </h1>
+        </section>
+        <section> 
         <h2> The problem </h2>
-        <p>There is a lack of immersive web3 education and onboarding, which is widening the gender diversity gap in web3. </p>     
+        <p> There is a lack of immersive web3 education and onboarding, which is widening the gender diversity gap in web3. </p>     
+        </section> 
+        <section> 
         <ul>
           Existing solutions: 
           <li> Don't meet the crypto-curious women where they are right now, in web2 </li>
@@ -46,33 +52,41 @@ export default function Home() {
               <li> Down the track we hope to open source our platform so other NFT projects can leverage our interactive education experiences, and add it to their collections. </li>
             </ul> 
           </li>
-
-          <li> Use read only content, and add to the noise of google searches.</li>
-          <li> Don't focus on fixing the real issue which is bad onboarding experiences to web 3.</li>
         </ul>
+        </section> 
+        
+        <section> 
+        <h2> Our team </h2>
+        <h3> Ash </h3>
+        <a href="https://twitter.com/womenof_web3"> twitter </a>
+        <a href="https://linkedin.com/in/ashibhat"> linkedin </a>
+        
+        <h3> Nivaaz </h3>
+        <a href="https://twitter.com/nivaaz_nft"> twitter </a>
+        <a href="https://linkedin.com/in/nivaaz"> linkedin </a>
+        
+        </section> 
+        
+        <section> 
+        </section> 
+
       </main>
       <Footer/>
     </div>
   )
 }
 
-export const Header = () =>(
+const Header = () =>(
   <Head>
-    <title>Create Next App</title>
+    <title>Girls on the block</title>
     <link rel="icon" href="/favicon.ico" />
   </Head>
 
 )
 
-export const Footer = () => ( <footer>
-  <a
-    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Built with love by 
+const Footer = () => ( <footer>
+<p>     Built with love by 
     Ash 
     & Nivaaz
-    
-  </a>
+    </p>
 </footer>)
