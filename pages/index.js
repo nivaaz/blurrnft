@@ -5,6 +5,7 @@ import linkedin from "./assets/linkedin.svg";
 import chain from "./assets/chain.svg";
 import Footer from "../components/Footer";
 import Header from '../components/Header';
+import CryptoPunkScene from '../components/CryptoPunkScene';
 
 export default function Home() {
     return (
@@ -20,13 +21,7 @@ export default function Home() {
                 <section>
 
                     <h2> <Image src={chain} height={32} width={32} alt="chain" /> I got skillz </h2>
-                    <p> There is a lack of immersive web3 education and onboarding, which is widening the gender diversity gap in web3. </p>
-                    Existing solutions:
-                    <ul>
-                        <li> Don't meet the crypto-curious women where they are right now, in web2 </li>
-                        <li> Use read only content, and add to the noise of google searches.</li>
-                        <li> Don't focus on fixing the real issue which is bad onboarding experiences to web 3.</li>
-                    </ul>
+                    <CryptoPunkScene />
 
                 </section>
 
