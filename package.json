@@ -6,8 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "eslint": "^8.13.0",
     "eslint-config-next": "^12.1.5",
+    "framer-motion": "^6",
     "next": "latest",
     "prettier": "^2.6.2",
     "react": "17.0.2",

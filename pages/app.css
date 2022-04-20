@@ -23,8 +23,6 @@ main{
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    background: #210d41;
-    color: whitesmoke
 }
 section{
     padding: 1em;
@@ -46,9 +44,6 @@ footer{
 }
 .logo-image{
     margin: auto;
-}
-footer a{
-    color: white;
 }
 
 @media only screen and (max-width: 600px) {
