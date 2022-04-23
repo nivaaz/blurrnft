@@ -5,6 +5,7 @@ import linkedin from "./assets/linkedin.svg";
 import chain from "./assets/chain.svg";
 import Footer from "../components/Footer";
 import Header from '../components/Header';
+// import Eclipse from '../components/Eclipse';
 import CryptoPunkScene from '../components/CryptoPunkScene';
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
 
                     <h2> <Image src={chain} height={32} width={32} alt="chain" /> I got skillz </h2>
                     <CryptoPunkScene />
-
+                    {/* <Eclipse /> */}
                 </section>
 
 
