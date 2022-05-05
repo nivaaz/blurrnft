@@ -5,6 +5,7 @@ import linkedin from "./assets/linkedin.svg";
 import chain from "./assets/chain.svg";
 import Footer from "../components/Footer";
 import Header from '../components/Header';
+import Arc, { colorOptions } from '../components/Arc';
 
 export default function Home() {
     return (
@@ -23,9 +24,9 @@ export default function Home() {
                     <p> There is a lack of immersive web3 education and onboarding, which is widening the gender diversity gap in web3. </p>
                     Existing solutions:
                     <ul>
-                        <li> Don't meet the crypto-curious women where they are right now, in web2 </li>
+                        <li> Don&apos;t meet the crypto-curious women where they are right now, in web2 </li>
                         <li> Use read only content, and add to the noise of google searches.</li>
-                        <li> Don't focus on fixing the real issue which is bad onboarding experiences to web 3.</li>
+                        <li> Don&apos;t focus on fixing the real issue which is bad onboarding experiences to web 3.</li>
                     </ul>
 
                 </section>
@@ -36,10 +37,12 @@ export default function Home() {
                     <h2> <Image src={chain} height={32} width={32} alt="chain" /> The problem </h2>
                     <p> There is a lack of immersive web3 education and onboarding, which is widening the gender diversity gap in web3. </p>
                     Existing solutions:
+                    <Arc size='sm' color={colorOptions.purple} kind="bottom-left" applyShadow={false} />
+                    <Arc size='sm' color={colorOptions.blue} kind="top-left" applyShadow={false} />
                     <ul>
-                        <li> Don't meet the crypto-curious women where they are right now, in web2 </li>
+                        <li> Don&apos;t meet the crypto-curious women where they are right now, in web2 </li>
                         <li> Use read only content, and add to the noise of google searches.</li>
-                        <li> Don't focus on fixing the real issue which is bad onboarding experiences to web 3.</li>
+                        <li> Don&apos;t focus on fixing the real issue which is bad onboarding experiences to web 3.</li>
                     </ul>
 
                 </section>
@@ -53,12 +56,12 @@ export default function Home() {
 
                         <li> <h3>Meeting crypto curious women where they are </h3>
                             <ul>
-                                <li> We'll focus on acquisition strategies through web2 social media platforms like tiktok and instagram.   </li>
+                                <li> We&apos;ll focus on acquisition strategies through web2 social media platforms like tiktok and instagram.   </li>
                                 <li> Our PFP NFT collection will have utility in web2 and web3 to make the return on investment clear and familiar. </li>
                             </ul>
                         </li>
 
-                        <li> <h3> Interactive onboarding, that's familiar </h3>
+                        <li> <h3> Interactive onboarding, that&apos;s familiar </h3>
                             <ul>
                                 <li> Our game-fi platform will be inspired by 2000s online dressup games.   </li>
                                 <li> We will focus on the 4 Es.
