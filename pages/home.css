@@ -4,6 +4,22 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,500&display=swap');
 
+body{
+    background: #e0dee9;
+    color: #3a324a;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.layout{
+    max-width: 900px;
+    margin: auto;
+    min-height: 90vh;
+    display: grid;
+    padding: 8px;
+}
 h1{
     font-family: 'Barbra';
     font-size: 8em;
@@ -15,20 +31,14 @@ h2{
 * {
     font-family: 'Open Sans', sans-serif;
 }
-main{
-    max-width: 800px;
-    margin: auto;
-}
 .container{
     padding: 0;
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    background: #f7f6fc;
-    color: #3c344b;
 }
 section{
-    padding: 1em;
+    padding-top: 1em;
     margin-bottom: 1em;
 }
 ul li{
@@ -50,8 +60,45 @@ a{
     color:#8f34e5 ;
 }
 
+/* content css */
+.contentContainer{
+    display: grid;
+    border: 1px solid #c7c2da;
+    border-radius: 1em;
+    padding: 8px 16px;
+    margin-top:8px;
+}
+.innerContentContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.contentContainer p{
+    margin: auto 0;
+}
+.loveit{
+    padding-top:8px;
+    font-size: smaller;
+}
+.tagsContainer{
+    display: flex;
+    justify-content: end;
+}
+.singleTag{
+    padding: 4px 8px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    color: darkslategrey;
+    border-radius: 1em;
+}
+
 @media only screen and (max-width: 600px) {
     h1{
         font-size: 4em;
+    }
+    .innerContentContainer{
+        grid-template-columns: 1fr;
+    }
+    .itemTitle{
+        padding: 8px 0px;
     }
 }
